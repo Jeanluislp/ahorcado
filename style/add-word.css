@@ -1,0 +1,21 @@
+.warning {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  margin-top: auto;
+  align-items: center;
+}
+.warning__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../assets/img/bi_exclamation-circle-fill.svg");
+}
+.warning__text {
+  font-size: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .warning {
+    margin-top: 76px;
+  }
+}

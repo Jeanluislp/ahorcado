@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Ahorcado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/base/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/Hangman.css" />
+    <link rel="stylesheet" href="./style/button.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <img src="./assets/img/logoJ.png" class="logo" alt="Logo" />
+      </div>
+    </header>
+    <main class="main main--height main--hangman container containr--main">
+      <canvas class="canvas" id="canvas" height="351px" width="286px"></canvas>
+      <div class="letters" id="letters"></div>
+      <span class="wrong-letter" id="wrong-letter"></span>
+      <div class="buttons buttons--row buttons--hangman">
+        <button class="btn btn--blue" id="reload">Nuevo Juego</button>
+        <a class="btn btn--gray btn--link" href="./index.html">Desistir</a>
+      </div>
+      <div class="blur" id="end-game-activate">
+        <div class="end-game">
+          <h2 class="end-game__status" id="status-end-game">Victoria</h2>
+          <h3 class="end-game__title">Fin del juego</h3>
+          <a href="./index.html" class="btn btn--blue btn--link btn--return"
+            >Volver</a
+          >
+        </div>
+      </div>
+      <input type="text" name="" id="input-text" class="input" />
+    </main>
+    <script src="./js/canvas.js" type="module"></script>
+    <script src="./js/hagman.js" type="module"></script>
+    <script src="./js/keyboard.js"></script>
+  </body>
+</html>

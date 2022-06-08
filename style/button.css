@@ -1,0 +1,73 @@
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.buttons--index {
+  max-width: 317px;
+}
+.buttons--add-word {
+  margin-top: 1rem;
+}
+.buttons--hangman {
+  margin-top: 56px;
+}
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 1.563rem;
+  border: 1px solid #0a3871;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.btn--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.btn--blue {
+  background: #0a3871;
+  color: #fff;
+}
+.btn--blue:hover {
+  background-color: #052751;
+}
+.btn--blue:active {
+  background-color: #031d3c;
+}
+.btn--blue--index {
+  height: 105px;
+}
+.btn--gray {
+  color: #0a3871;
+}
+.btn--copy {
+  margin-top: 2rem;
+}
+.btn--return {
+  max-width: 328px;
+  margin-top: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .btn--blue--index {
+    height: 114px;
+  }
+  .button--row {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn--blue--index {
+    height: 114px;
+  }
+  .buttons--row {
+    height: 67px;
+    flex-direction: row;
+  }
+}

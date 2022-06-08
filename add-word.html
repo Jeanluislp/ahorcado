@@ -1,0 +1,46 @@
+<!<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Añadir Palabra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/base/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/add-word.css" />
+    <link rel="stylesheet" href="./style/button.css" />
+    <link rel="stylesheet" href="./style/text-area.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img src="./assets/img/logoJ.png" class="logo" alt="Logo" />
+      </div>
+    </header>
+    <main class="main container containr--main">
+      <textarea
+        class="text-area"
+        id="text-area"
+        cols="30"
+        rows="10"
+        placeholder="Ingrece una palabra"
+        maxlength="8"
+      ></textarea>
+      <div class="warning">
+        <div class="warning__icon"></div>
+        <span class="warning__text">Máx. de 8 letras</span>
+      </div>
+      <div class="buttons buttons--add-word buttons--row">
+        <button class="btn btn--blue" id="save">Guardar y empezar</button>
+        <a class="btn btn--gray btn--link" href="./index.html">Cancelar</a>
+      </div>
+    </main>
+    <script src="./js/add-word.js"></script>
+  </body>
+</html>
